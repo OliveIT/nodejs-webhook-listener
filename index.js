@@ -1,5 +1,5 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+const express = require('express');
+const bodyParser = require('body-parser');
 const fs = require('fs');
 const moment = require('moment');
 
@@ -37,7 +37,7 @@ app.post('/api/service/points/get', function(req, res){
     if(USER_POINTS[data.user] === undefined){
       USER_POINTS[data.user] = 1000;
     } else {
-      USER_POINTS[data.user] += 10;
+      // USER_POINTS[data.user] += 10;
     }
     retcode = 200;
     retdata = {
